@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register{% endblock title %}
+Register
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title> Register form </title>
+</head>
+
+<body>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="username">
+        <label for="floatingInput">Username</label>
+    </div>
+    
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="email">
+        <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="text-center text-lg-start mt-4 pt-2">
+        <button type="button" class="btn btn-primary btn-lg"
+          style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
+      </div>
+    <!-- fontawesome v5-->
+    {% comment %} <script src="{% static 'js/fontawesome.js' %} "></script> {% endcomment %}
+
+</body>
+
+</html>
+
+{% endblock body %}
